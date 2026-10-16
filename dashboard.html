@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard — Inkly</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="index.html">inkly<span>.</span></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a class="active" href="dashboard.html">Dashboard</a>
+      <a href="create-blog.html">Write a Story</a>
+    </nav>
+    <button class="btn btn-light" id="logoutBtn" type="button">Log out</button>
+  </header>
+
+  <main class="page-wrap">
+    <div class="dashboard-top">
+      <div class="page-title">
+        <span class="eyebrow">YOUR CREATIVE SPACE</span>
+        <h1>My dashboard<span>.</span></h1>
+        <p id="welcomeMessage">Welcome back, storyteller.</p>
+      </div>
+      <a class="btn btn-primary" href="create-blog.html">＋ Create new blog</a>
+    </div>
+
+    <section class="stats-grid">
+      <article class="stat-card">
+        <p>Total stories</p>
+        <h2 id="totalBlogs">0</h2>
+      </article>
+      <article class="stat-card">
+        <p>Published stories</p>
+        <h2 id="publishedBlogs">0</h2>
+      </article>
+      <article class="stat-card">
+        <p>Categories explored</p>
+        <h2 id="categoryCount">0</h2>
+      </article>
+    </section>
+
+    <div class="section-heading" style="margin-bottom:20px">
+      <div>
+        <span class="eyebrow">YOUR WRITING</span>
+        <h2>Your stories</h2>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table class="blog-table">
+        <thead>
+          <tr>
+            <th>Blog title</th>
+            <th>Category</th>
+            <th>Date</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="dashboardBlogs"></tbody>
+      </table>
+      <div id="dashboardEmpty" class="empty-state">
+        <h3>Your story begins here.</h3>
+        <p>You haven't published any blogs yet.</p>
+        <a class="btn btn-primary" style="margin-top:15px" href="create-blog.html">Write your first blog</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="index.html">inkly<span>.</span></a>
+    <p>Keep writing. Keep growing.</p>
+    <span>© <span id="year"></span> Inkly Blog</span>
+  </footer>
+</body>
+</html>

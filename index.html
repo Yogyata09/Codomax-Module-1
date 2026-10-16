@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inkly — Stories That Matter</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="index.html">inkly<span>.</span></a>
+
+    <nav>
+      <a class="active" href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="create-blog.html">Write a Story</a>
+    </nav>
+
+    <div class="nav-actions" id="navActions">
+      <a class="btn btn-light" href="login.html">Log in</a>
+      <a class="btn btn-primary" href="register.html">Get Started</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">A LITTLE SPACE FOR BIG IDEAS</span>
+        <h1>Every story<br>deserves to <span>be heard.</span></h1>
+        <p>
+          A home for curious minds, thoughtful words, and
+          stories that stay with you long after you've read them.
+        </p>
+        <div class="hero-actions">
+          <a href="#stories" class="btn btn-primary">Explore stories ↗</a>
+          <a href="create-blog.html" class="text-link">Start writing →</a>
+        </div>
+        <div class="hero-note">
+          <span class="online-dot"></span>
+          A community of thinkers, dreamers and storytellers.
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="art-card art-back"></div>
+        <div class="art-card art-front">
+          <span class="art-label">THE SUNDAY EDIT</span>
+          <div class="art-sun"></div>
+          <div class="art-hill hill-one"></div>
+          <div class="art-hill hill-two"></div>
+          <div class="art-copy">
+            <small>ISSUE NO. 08 · PERSONAL GROWTH</small>
+            <h2>On finding<br>your own way.</h2>
+            <p>Sometimes the best path is the one you create.</p>
+          </div>
+        </div>
+        <div class="floating-note">✳ Make room for wonder</div>
+      </div>
+    </section>
+
+    <section class="stories section" id="stories">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">THE READING ROOM</span>
+          <h2>Stories worth your time<span>.</span></h2>
+        </div>
+        <a href="dashboard.html" class="text-link">Your dashboard →</a>
+      </div>
+
+      <div class="category-list">
+        <button class="category active" data-category="All">All stories</button>
+        <button class="category" data-category="Lifestyle">Lifestyle</button>
+        <button class="category" data-category="Technology">Technology</button>
+        <button class="category" data-category="Travel">Travel</button>
+        <button class="category" data-category="Personal Growth">Personal growth</button>
+      </div>
+
+      <div class="blog-grid" id="blogGrid"></div>
+    </section>
+
+    <section class="write-banner">
+      <div>
+        <span class="eyebrow">YOUR WORDS MATTER</span>
+        <h2>Have a story to tell?</h2>
+        <p>Turn that thought in your head into something the world can read.</p>
+      </div>
+      <a href="create-blog.html" class="btn btn-dark">Write your first story ↗</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="index.html">inkly<span>.</span></a>
+    <p>Made for people who have something to say.</p>
+    <span>© <span id="year"></span> Inkly Blog</span>
+  </footer>
+</body>
+</html>

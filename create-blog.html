@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Write a Story — Inkly</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="index.html">inkly<span>.</span></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a class="active" href="create-blog.html">Write a Story</a>
+    </nav>
+    <a class="btn btn-light" href="dashboard.html">My stories</a>
+  </header>
+
+  <main class="page-wrap">
+    <div class="page-title">
+      <span class="eyebrow">THE WORLD IS LISTENING</span>
+      <h1>Write your story<span>.</span></h1>
+      <p>Don't worry about perfect. Just start with something real.</p>
+    </div>
+
+    <form id="createBlogForm" class="auth-form" style="max-width:800px;border-radius:16px;margin-top:25px">
+      <div class="field">
+        <label for="blogTitle">Blog title</label>
+        <input id="blogTitle" type="text" maxlength="100" placeholder="Give your story a beautiful title..." required>
+      </div>
+
+      <div class="field">
+        <label for="blogCategory">Choose a category</label>
+        <select id="blogCategory" required>
+          <option value="">Select category</option>
+          <option>Lifestyle</option>
+          <option>Technology</option>
+          <option>Travel</option>
+          <option>Personal Growth</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="blogExcerpt">Short description</label>
+        <input id="blogExcerpt" type="text" maxlength="180" placeholder="What is your story about?" required>
+      </div>
+
+      <div class="field">
+        <label for="blogContent">Your story</label>
+        <textarea id="blogContent" minlength="20" maxlength="10000" placeholder="Every great story begins with a single sentence..." required></textarea>
+        <p style="font-size:11px;color:#77758a;margin-top:5px">Write at least 20 characters.</p>
+      </div>
+
+      <p id="createBlogMessage" class="message" aria-live="polite"></p>
+
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <button class="btn btn-primary" type="submit">Publish story ↗</button>
+        <a class="btn btn-light" href="dashboard.html">Cancel</a>
+      </div>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="index.html">inkly<span>.</span></a>
+    <p>Your words can make a difference.</p>
+    <span>© <span id="year"></span> Inkly Blog</span>
+  </footer>
+</body>
+</html>

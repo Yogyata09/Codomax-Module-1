@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login — Inkly</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="index.html">inkly<span>.</span></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="register.html">Create account</a>
+    </nav>
+    <a class="btn btn-light" href="index.html">← Back home</a>
+  </header>
+
+  <main class="auth-layout">
+    <section class="auth-intro">
+      <span class="eyebrow">WELCOME BACK</span>
+      <h1>Your next great read is waiting.</h1>
+      <p>Pick up where you left off. Your little corner of the internet is ready for you.</p>
+    </section>
+
+    <section class="auth-form">
+      <h2>Log in</h2>
+      <p class="form-subtitle">Enter your details to continue.</p>
+
+      <form id="loginForm">
+        <div class="field">
+          <label for="loginEmail">Email address</label>
+          <input id="loginEmail" type="email" placeholder="you@example.com" required>
+        </div>
+        <div class="field">
+          <label for="loginPassword">Password</label>
+          <input id="loginPassword" type="password" placeholder="Enter password" minlength="6" required>
+        </div>
+        <button class="btn btn-primary btn-full" type="submit">Log in →</button>
+        <p id="loginMessage" class="message" aria-live="polite"></p>
+      </form>
+
+      <p class="form-bottom">New to Inkly? <a href="register.html">Create an account</a></p>
+    </section>
+  </main>
+</body>
+</html>
